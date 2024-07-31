@@ -1,0 +1,114 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Shabnam */
+@font-face {
+  font-family: Shabnam;
+  src:url('./assets/font/shabnam/Shabnam.eot');
+  src: url("./assets/font/Shabnam.eot?#iefix") format("embedded-opentype"), url("./assets/font/Shabnam.woff2") format("woff2"), url("./assets/font/shabnam/Shabnam.woff") format("woff"), url("./assets/font/shabnam/Shabnam.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/font/shabnam/Shabnam-Bold.eot");
+  src: url("./assets/font/shabnam/Shabnam-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/font/shabnam/Shabnam-Bold.woff2") format("woff2"), url("./assets/font/shabnam/Shabnam-Bold.woff") format("woff"), url("./assets/font/shabnam/Shabnam-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/font/shabnam/Shabnam-Thin.eot");
+  src: url("./assets/font/shabnam/Shabnam-Thin.eot?#iefix") format("embedded-opentype"), url("./assets/font/shabnam/Shabnam-Thin.woff2") format("woff2"), url("./assets/font/shabnam/Shabnam-Thin.woff") format("woff"), url("./assets/font/shabnam/Shabnam-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/font/shabnam/Shabnam-Light.eot");
+  src: url("./assets/font/shabnam/Shabnam-Light.eot?#iefix") format("embedded-opentype"), url("./assets/font/shabnam/Shabnam-Light.woff2") format("woff2"), url("./assets/font/shabnam/Shabnam-Light.woff") format("woff"), url("./assets/font/shabnam/Shabnam-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/font/shabnam/Shabnam-Medium.eot");
+  src: url("./assets/font/shabnam/Shabnam-Medium.eot?#iefix") format("embedded-opentype"), url("./assets/font/shabnam/Shabnam-Medium.woff2") format("woff2"), url("./assets/font/shabnam/Shabnam-Medium.woff") format("woff"), url("./assets/font/shabnam/Shabnam-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Shabnam;
+  background-color: #1c1c1d;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222831;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFCD45;
+  border-radius: 100px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply text-slate-gray text-lg leading-7;
+  }
+}
