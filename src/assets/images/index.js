@@ -26,6 +26,7 @@ import Screen1 from './screen1.png'
 import Sscreen from './1.png'
 import AppScreen from './2.png'
 import AppScreen2 from './3.png'
+import AppScreen3 from './4.png'
 
 import Slide1 from './slide-1.png'
 import Slide2 from './slide-2.png'
@@ -58,5 +59,6 @@ export {
     Slide2,
 
     AppScreen,
-    AppScreen2
+    AppScreen2,
+    AppScreen3
 }
