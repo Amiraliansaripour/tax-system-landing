@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Nav from '../components/Nav'
 import Hero from './Hero'
 import PopularProducts from './PopularProducts'
@@ -8,10 +8,25 @@ import SpecialOffer from './SpecialOffer'
 import Subscribe from './Subscribe'
 import Footer from './Footer'
 import HeroSlider from '../components/HeroSlider'
+import Loading from '../components/Loading'
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
+    
+  useEffect(() => {
+    // Simulate an API call
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1200);
+  }, []);
+
+  
   return (
     <main className="relative">
+      {
+        isLoading ? <Loading /> : <></>
+      }
+      
     <Nav />
     <section className="py-9 overflow-hidden">
       {/* <Hero /> */}
