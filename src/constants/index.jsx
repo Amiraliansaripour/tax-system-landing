@@ -29,7 +29,7 @@ export const navLinks = [
   { href: "#home", label: "خانه" },
   { href: "#about-us", label: "درباره ما" },
   { href: "#products", label: "تعرفه ها" },
-  { href: "#contact-us", label: "تماس باما" },
+  { href: "#contact-us", label: "تماس با ما" },
 ];
 
 export const shoes = [

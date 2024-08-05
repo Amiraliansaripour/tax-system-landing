@@ -28,16 +28,16 @@ const SpecialOffer = () => {
         </div>
       </div>
       <div data-aos="fade-left" className="flex flex-1 flex-col">
-        <h2 className="text-4xl capitalize font-bold lg:max-w-lg dark:text-white">
+        <h2 className="text-4xl capitalize font-bold lg:max-w-lg text-white">
           نیم نگاهی به <span className="text-coral-red">سامانه</span>
         </h2>
 
-        <p className="mt-4 lg:max-w-lg info-text dark:text-gray-400">
+        <p className="mt-4 lg:max-w-lg info-text text-gray-400">
           سامانه ارسال صورتحساب الکترونیک پرشین سیستم   با ارائه یک پلتفرم یکپارچه و کارآمد،
           فرآیندهای مدیریت صورتحساب‌های شما را ساده‌تر و کارآمدتر می‌کند. با
           استفاده از این سامانه، می‌توانید
         </p>
-        <p className="mt-6 lg:max-w-lg info-text dark:text-gray-400">
+        <p className="mt-6 lg:max-w-lg info-text text-gray-400">
           به صورت دقیق و سریع، تمامی صورتحساب‌های خود را مدیریت کنید و از خطاهای
           احتمالی جلوگیری کنید.
         </p>
@@ -45,7 +45,7 @@ const SpecialOffer = () => {
         <div className="mt-11 flex flex-wrap gap-4">
           <a
             href="https://panel.moadii.ir/"
-            className="flex justify-center items-center gap-2 px-7 py-4 border font-bold text-base leading-none shadow-2xl dark:text-black hover:shadow-coral-red transition-all text-white bg-coral-red border-coral-red rounded-[4px]"
+            className="flex justify-center items-center gap-2 px-7 py-4 border font-bold text-base leading-none shadow-2xl text-black hover:shadow-coral-red transition-all bg-coral-red border-coral-red rounded-[4px]"
           >
              نمایش سامانه
           </a>

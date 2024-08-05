@@ -13,7 +13,7 @@ const Nav = ({isLogin}) => {
                 </a>
                 <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
                     <li>
-                        <a href="https://panel.moadii.ir/login" className='bg-coral-red px-4 p-2 rounded-lg text-white dark:text-black'>ورود</a>
+                        <a href="https://panel.moadii.ir/login" target="_blank" className='bg-coral-red px-4 p-2 rounded-lg text-black'>ورود</a>
                     </li>
                     {
                       
@@ -23,7 +23,7 @@ const Nav = ({isLogin}) => {
                                     !isLogin ?
                                     <a
                                     href={ item.href}
-                                    className='leading-normal font-bold text-[15px] text-slate-gray dark:text-gray-300 hover:text-coral-red transition-all'
+                                    className='leading-normal font-bold text-[15px] text-gray-300 hover:text-coral-red transition-all'
                                 >
                                     {item.label}
                                 </a> 
@@ -31,7 +31,7 @@ const Nav = ({isLogin}) => {
                                 
                                 <Link
                                 to="/"
-                                className='leading-normal font-bold text-[15px] text-slate-gray dark:text-gray-300 hover:text-coral-red transition-all'
+                                className='leading-normal font-bold text-[15px] text-gray-300 hover:text-coral-red transition-all'
                             >
                                 {item.label}
                             </Link>
@@ -43,7 +43,7 @@ const Nav = ({isLogin}) => {
                     }
                 </ul>
                 <div className="hidden max-lg:block">
-                <GiHamburgerMenu className='text-3xl dark:text-white' />
+                <GiHamburgerMenu className='text-3xl text-white' />
                 </div>
             </nav>
         </header>

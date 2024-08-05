@@ -36,7 +36,7 @@ const Hero = () => {
         </h1>
         <br />
         {/* <Button className="mt-24" label="درخواست دمو" /> */}
-        <a href="https://panel.moadii.ir/login" className="flex justify-center items-center gap-2 px-7 py-4 border font-bold text-base leading-none shadow-3xl hover:shadow-red-300 transition-all text-white bg-coral-red border-coral-red rounded-[4px]">درخواست دمو</a>
+        <a href="https://panel.moadii.ir/login" target="_blank" className="flex justify-center items-center gap-2 px-7 py-4 border font-bold text-base leading-none shadow-3xl hover:shadow-red-300 transition-all text-white bg-coral-red border-coral-red rounded-[4px]">درخواست دمو</a>
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
             <div key={stat.label}>
