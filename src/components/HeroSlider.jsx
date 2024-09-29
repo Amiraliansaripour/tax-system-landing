@@ -1,15 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation,Controller } from "swiper/modules";
 import "swiper/css";
 import { Slide1, Slide2 } from "./../assets/images/index";
+import HeroGif from './../../public/hero.gif'
 
 const HeroSlider = () => {
+  const [isVisible, setIsVisible] = useState(true);  
+  const [fadeOut, setFadeOut] = useState(false);
+  const [hiddenItem , setHiddenItem] = useState(false)
+
+  useEffect(() => {
+    const fadeTimer = setTimeout(() => {
+      setFadeOut(true);
+    }, 7500);
+
+    const removeTimer = setTimeout(() => {
+      setIsVisible(false);
+    }, 8000);
+
+    const hidddenTimer = setTimeout(() => {
+      setHiddenItem(true);
+    }, 9000);
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(removeTimer);
+      clearTimeout(hidddenTimer)
+    };
+  }, []);
+
   return (
-    <div
-      className="w-full h-[70vh] overflow-hidden
-     mt-20"
+    <div className="w-full h-[70vh] overflow-hidden mt-20 relative">
+        <div
+      className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-10 transition-opacity duration-500 ${
+        fadeOut ? 'opacity-0' : 'opacity-100' 
+      } ${hiddenItem && "hidden"}`}
     >
+      <div className="bg-box shadow-md shadow-[#383838bb] p-2 rounded-lg text-center">
+        <img
+          src={HeroGif}
+          alt="Loading"
+          className="w-[550px] max-sm:[350px]"
+        />
+      </div>
+    </div>
       <Swiper 
      loop={true}
      autoplay={{
